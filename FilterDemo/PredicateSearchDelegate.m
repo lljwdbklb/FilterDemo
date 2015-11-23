@@ -26,8 +26,9 @@
 - (void)searchTimer:(NSTimer *)timer {
     NSString *searchText = timer.userInfo;
 //    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name LIKE %@",[NSString stringWithFormat:@"*%@*",searchText]];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name CONTAINS[cd] %@",searchText];
-    NSArray *foods = [self.sources filteredArrayUsingPredicate:predicate];
+//    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name CONTAINS[cd] %@",searchText];
+//    NSArray *foods = [self.sources filteredArrayUsingPredicate:predicate];
+    NSArray *foods = [self.sources wj_findArrayUsingWithFormat:@"name CONTAINS[cd] %@",searchText];
 //    NSPredicate *between = [NSPredicate predicateWithFormat:@"monry BETWEEN{10,20}"];
 //    NSString *regex =@"^1(3[0-9]|5[0-35-9]|8[025-9])\\d{8}$";//手机号
 //    NSPredicate *regexTestMobile = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];

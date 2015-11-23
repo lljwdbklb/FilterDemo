@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C12DFFA1C029F2400318440 /* NSArray+WJFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C12DFF91C029F2400318440 /* NSArray+WJFilter.m */; };
 		9C1B37E91BFEEF6C0033DA08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B37E81BFEEF6C0033DA08 /* main.m */; };
 		9C1B37EC1BFEEF6C0033DA08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B37EB1BFEEF6C0033DA08 /* AppDelegate.m */; };
 		9C1B37EF1BFEEF6C0033DA08 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B37EE1BFEEF6C0033DA08 /* ViewController.m */; };
@@ -40,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C12DFF51C029EFD00318440 /* WJFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJFilter.h; sourceTree = "<group>"; };
+		9C12DFF81C029F2400318440 /* NSArray+WJFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+WJFilter.h"; sourceTree = "<group>"; };
+		9C12DFF91C029F2400318440 /* NSArray+WJFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WJFilter.m"; sourceTree = "<group>"; };
 		9C1B37E41BFEEF6C0033DA08 /* FilterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1B37E81BFEEF6C0033DA08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9C1B37EA1BFEEF6C0033DA08 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,6 +99,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C12DFF41C029EC900318440 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				9C12DFF51C029EFD00318440 /* WJFilter.h */,
+				9C12DFF81C029F2400318440 /* NSArray+WJFilter.h */,
+				9C12DFF91C029F2400318440 /* NSArray+WJFilter.m */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
 		9C1B37DB1BFEEF6C0033DA08 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +132,7 @@
 		9C1B37E61BFEEF6C0033DA08 /* FilterDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9C12DFF41C029EC900318440 /* Foundation */,
 				9C1B37EA1BFEEF6C0033DA08 /* AppDelegate.h */,
 				9C1B37EB1BFEEF6C0033DA08 /* AppDelegate.m */,
 				9C1B37ED1BFEEF6C0033DA08 /* ViewController.h */,
@@ -300,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C1B37EF1BFEEF6C0033DA08 /* ViewController.m in Sources */,
+				9C12DFFA1C029F2400318440 /* NSArray+WJFilter.m in Sources */,
 				9CBF13FE1BFEFB33009AE45D /* Food.m in Sources */,
 				9C1B381C1BFEF3760033DA08 /* PredicateController.m in Sources */,
 				9C1B38221BFEF3A10033DA08 /* KVCController.m in Sources */,

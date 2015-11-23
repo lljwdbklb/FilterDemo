@@ -26,8 +26,14 @@
 
 #pragma mark - Events
 - (IBAction)sortChanged:(UISegmentedControl *)sender {
-    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"monry" ascending:!sender.selectedSegmentIndex];
-    [self.viewController.foods sortUsingDescriptors:@[sortDescriptor]];
+//    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"monry" ascending:!sender.selectedSegmentIndex];
+//    [self.viewController.foods sortUsingDescriptors:@[sortDescriptor]];
+    [self.viewController.foods wj_sortUsingWithKey:@"monry" ascending:!sender.selectedSegmentIndex];
+    
+//    [self.viewController.foods sortUsingComparator:^NSComparisonResult(Food * _Nonnull obj1, Food *_Nonnull obj2) {
+//        return !sender.selectedSegmentIndex?[obj1.monry compare:obj2.monry]:[obj2.monry compare:obj1.monry];
+//    }];
+    
     [self.tableView reloadData];
 }
 
